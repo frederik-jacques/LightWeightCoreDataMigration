@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86293FDD14DDB1AD00D81176 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86293FDC14DDB1AD00D81176 /* UIKit.framework */; };
+		86293FDF14DDB1AD00D81176 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86293FDE14DDB1AD00D81176 /* Foundation.framework */; };
+		86293FE114DDB1AD00D81176 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86293FE014DDB1AD00D81176 /* CoreGraphics.framework */; };
+		86293FE314DDB1AD00D81176 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86293FE214DDB1AD00D81176 /* CoreData.framework */; };
+		86293FE914DDB1AD00D81176 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 86293FE714DDB1AD00D81176 /* InfoPlist.strings */; };
+		86293FEB14DDB1AD00D81176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86293FEA14DDB1AD00D81176 /* main.m */; };
+		86293FEF14DDB1AD00D81176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86293FEE14DDB1AD00D81176 /* AppDelegate.m */; };
+		86293FF214DDB1AD00D81176 /* DevineStudents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		86293FD814DDB1AD00D81176 /* DevineStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevineStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86293FDC14DDB1AD00D81176 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		86293FDE14DDB1AD00D81176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		86293FE014DDB1AD00D81176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		86293FE214DDB1AD00D81176 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		86293FE614DDB1AD00D81176 /* DevineStudents-Info.plist */ = {isa = PBXFileReference; path = "DevineStudents-Info.plist"; sourceTree = "<group>"; };
+		86293FE814DDB1AD00D81176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		86293FEA14DDB1AD00D81176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		86293FEC14DDB1AD00D81176 /* DevineStudents-Prefix.pch */ = {isa = PBXFileReference; path = "DevineStudents-Prefix.pch"; sourceTree = "<group>"; };
+		86293FED14DDB1AD00D81176 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		86293FEE14DDB1AD00D81176 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		86293FF114DDB1AD00D81176 /* DevineStudents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DevineStudents.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86293FD514DDB1AD00D81176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86293FDD14DDB1AD00D81176 /* UIKit.framework in Frameworks */,
+				86293FDF14DDB1AD00D81176 /* Foundation.framework in Frameworks */,
+				86293FE114DDB1AD00D81176 /* CoreGraphics.framework in Frameworks */,
+				86293FE314DDB1AD00D81176 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86293FCD14DDB1AD00D81176 = {
+			isa = PBXGroup;
+			children = (
+				86293FE414DDB1AD00D81176 /* DevineStudents */,
+				86293FDB14DDB1AD00D81176 /* Frameworks */,
+				86293FD914DDB1AD00D81176 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		86293FD914DDB1AD00D81176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86293FD814DDB1AD00D81176 /* DevineStudents.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86293FDB14DDB1AD00D81176 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86293FDC14DDB1AD00D81176 /* UIKit.framework */,
+				86293FDE14DDB1AD00D81176 /* Foundation.framework */,
+				86293FE014DDB1AD00D81176 /* CoreGraphics.framework */,
+				86293FE214DDB1AD00D81176 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86293FE414DDB1AD00D81176 /* DevineStudents */ = {
+			isa = PBXGroup;
+			children = (
+				86293FED14DDB1AD00D81176 /* AppDelegate.h */,
+				86293FEE14DDB1AD00D81176 /* AppDelegate.m */,
+				86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */,
+				86293FE514DDB1AD00D81176 /* Supporting Files */,
+			);
+			path = DevineStudents;
+			sourceTree = "<group>";
+		};
+		86293FE514DDB1AD00D81176 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				86293FE614DDB1AD00D81176 /* DevineStudents-Info.plist */,
+				86293FE714DDB1AD00D81176 /* InfoPlist.strings */,
+				86293FEA14DDB1AD00D81176 /* main.m */,
+				86293FEC14DDB1AD00D81176 /* DevineStudents-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86293FD714DDB1AD00D81176 /* DevineStudents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86293FF514DDB1AD00D81176 /* Build configuration list for PBXNativeTarget "DevineStudents" */;
+			buildPhases = (
+				86293FD414DDB1AD00D81176 /* Sources */,
+				86293FD514DDB1AD00D81176 /* Frameworks */,
+				86293FD614DDB1AD00D81176 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DevineStudents;
+			productName = DevineStudents;
+			productReference = 86293FD814DDB1AD00D81176 /* DevineStudents.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86293FCF14DDB1AD00D81176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "dev-dev";
+			};
+			buildConfigurationList = 86293FD214DDB1AD00D81176 /* Build configuration list for PBXProject "DevineStudents" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 86293FCD14DDB1AD00D81176;
+			productRefGroup = 86293FD914DDB1AD00D81176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86293FD714DDB1AD00D81176 /* DevineStudents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86293FD614DDB1AD00D81176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86293FE914DDB1AD00D81176 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86293FD414DDB1AD00D81176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86293FEB14DDB1AD00D81176 /* main.m in Sources */,
+				86293FEF14DDB1AD00D81176 /* AppDelegate.m in Sources */,
+				86293FF214DDB1AD00D81176 /* DevineStudents.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		86293FE714DDB1AD00D81176 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86293FE814DDB1AD00D81176 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86293FF314DDB1AD00D81176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		86293FF414DDB1AD00D81176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86293FF614DDB1AD00D81176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DevineStudents/DevineStudents-Prefix.pch";
+				INFOPLIST_FILE = "DevineStudents/DevineStudents-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		86293FF714DDB1AD00D81176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DevineStudents/DevineStudents-Prefix.pch";
+				INFOPLIST_FILE = "DevineStudents/DevineStudents-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86293FD214DDB1AD00D81176 /* Build configuration list for PBXProject "DevineStudents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86293FF314DDB1AD00D81176 /* Debug */,
+				86293FF414DDB1AD00D81176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86293FF514DDB1AD00D81176 /* Build configuration list for PBXNativeTarget "DevineStudents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86293FF614DDB1AD00D81176 /* Debug */,
+				86293FF714DDB1AD00D81176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86293FF114DDB1AD00D81176 /* DevineStudents.xcdatamodel */,
+			);
+			currentVersion = 86293FF114DDB1AD00D81176 /* DevineStudents.xcdatamodel */;
+			path = DevineStudents.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 86293FCF14DDB1AD00D81176 /* Project object */;
+}
