@@ -20,7 +20,7 @@
 		8629401714DDD01E00D81176 /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8629400E14DDC6EF00D81176 /* libQuickDialog.a */; };
 		8629401914DDD1B300D81176 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8629401814DDD1B300D81176 /* CoreLocation.framework */; };
 		8629401B14DDD1BE00D81176 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8629401A14DDD1BE00D81176 /* MapKit.framework */; };
-		8629401E14DDDC7500D81176 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8629401D14DDDC7400D81176 /* Student.m */; };
+		8629402314DDE69200D81176 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8629402214DDE69200D81176 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,8 +67,9 @@
 		8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = QuickDialog/QuickDialog.xcodeproj; sourceTree = "<group>"; };
 		8629401814DDD1B300D81176 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		8629401A14DDD1BE00D81176 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		8629401C14DDDC7400D81176 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		8629401D14DDDC7400D81176 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		8629402014DDE49000D81176 /* DevineStudentsV2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DevineStudentsV2.xcdatamodel; sourceTree = "<group>"; };
+		8629402114DDE69200D81176 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8629402214DDE69200D81176 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +175,9 @@
 		8629401F14DDE2D500D81176 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8629401C14DDDC7400D81176 /* Student.h */,
-				8629401D14DDDC7400D81176 /* Student.m */,
 				86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */,
+				8629402114DDE69200D81176 /* Student.h */,
+				8629402214DDE69200D81176 /* Student.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,7 +273,7 @@
 				86293FF214DDB1AD00D81176 /* DevineStudents.xcdatamodeld in Sources */,
 				86293FFC14DDB21E00D81176 /* MainViewController.m in Sources */,
 				8629400114DDBA7600D81176 /* AddStudentViewController.m in Sources */,
-				8629401E14DDDC7500D81176 /* Student.m in Sources */,
+				8629402314DDE69200D81176 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,6 +391,7 @@
 				86293FF714DDB1AD00D81176 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -397,9 +399,10 @@
 		86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				8629402014DDE49000D81176 /* DevineStudentsV2.xcdatamodel */,
 				86293FF114DDB1AD00D81176 /* DevineStudents.xcdatamodel */,
 			);
-			currentVersion = 86293FF114DDB1AD00D81176 /* DevineStudents.xcdatamodel */;
+			currentVersion = 8629402014DDE49000D81176 /* DevineStudentsV2.xcdatamodel */;
 			path = DevineStudents.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

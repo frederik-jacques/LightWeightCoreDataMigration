@@ -25,10 +25,13 @@
     lblFirstname.key = @"firstName";
     QEntryElement *lblLastname = [[QEntryElement alloc] initWithTitle:@"Last name" Value:@""];
     lblLastname.key = @"lastName";
+    QEntryElement *lblEmail = [[QEntryElement alloc] initWithTitle:@"E-mail" Value:@""];
+    lblEmail.key = @"email";
     
     [root addSection:section];
     [section addElement:lblFirstname];
     [section addElement:lblLastname];
+    [section addElement:lblEmail];
         
     self = [super initWithRoot:root];
     if (self) {
@@ -50,7 +53,7 @@
     Student *student = [NSEntityDescription insertNewObjectForEntityForName:@"Student" inManagedObjectContext:self.context];
     student.firstname = [(QEntryElement*)[self.root elementWithKey:@"firstName"] textValue];
     student.lastname = [(QEntryElement*)[self.root elementWithKey:@"lastName"] textValue];
-    
+    student.email = [(QEntryElement*)[self.root elementWithKey:@"email"] textValue];
     NSError *error = nil;
     if( [self.context save:&error] ){
         NSLog(@"[AddStudentVC] Student added");
