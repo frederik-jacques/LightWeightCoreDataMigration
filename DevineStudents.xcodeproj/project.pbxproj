@@ -15,7 +15,37 @@
 		86293FEB14DDB1AD00D81176 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 86293FEA14DDB1AD00D81176 /* main.m */; };
 		86293FEF14DDB1AD00D81176 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 86293FEE14DDB1AD00D81176 /* AppDelegate.m */; };
 		86293FF214DDB1AD00D81176 /* DevineStudents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */; };
+		86293FFC14DDB21E00D81176 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86293FFA14DDB21E00D81176 /* MainViewController.m */; };
+		8629400114DDBA7600D81176 /* AddStudentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8629400014DDBA7600D81176 /* AddStudentViewController.m */; };
+		8629401714DDD01E00D81176 /* libQuickDialog.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8629400E14DDC6EF00D81176 /* libQuickDialog.a */; };
+		8629401914DDD1B300D81176 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8629401814DDD1B300D81176 /* CoreLocation.framework */; };
+		8629401B14DDD1BE00D81176 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8629401A14DDD1BE00D81176 /* MapKit.framework */; };
+		8629401E14DDDC7500D81176 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 8629401D14DDDC7400D81176 /* Student.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8629400B14DDC6EF00D81176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D80B0E3313E052DF00FA85CA;
+			remoteInfo = QuickDialogExample;
+		};
+		8629400D14DDC6EF00D81176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2C542393145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+		8629401514DDD01100D81176 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C542392145ADEBD0026A152;
+			remoteInfo = QuickDialog;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		86293FD814DDB1AD00D81176 /* DevineStudents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevineStudents.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,13 +53,22 @@
 		86293FDE14DDB1AD00D81176 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		86293FE014DDB1AD00D81176 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		86293FE214DDB1AD00D81176 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		86293FE614DDB1AD00D81176 /* DevineStudents-Info.plist */ = {isa = PBXFileReference; path = "DevineStudents-Info.plist"; sourceTree = "<group>"; };
+		86293FE614DDB1AD00D81176 /* DevineStudents-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DevineStudents-Info.plist"; sourceTree = "<group>"; };
 		86293FE814DDB1AD00D81176 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		86293FEA14DDB1AD00D81176 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		86293FEC14DDB1AD00D81176 /* DevineStudents-Prefix.pch */ = {isa = PBXFileReference; path = "DevineStudents-Prefix.pch"; sourceTree = "<group>"; };
-		86293FED14DDB1AD00D81176 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		86293FEC14DDB1AD00D81176 /* DevineStudents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DevineStudents-Prefix.pch"; sourceTree = "<group>"; };
+		86293FED14DDB1AD00D81176 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		86293FEE14DDB1AD00D81176 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		86293FF114DDB1AD00D81176 /* DevineStudents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DevineStudents.xcdatamodel; sourceTree = "<group>"; };
+		86293FF914DDB21E00D81176 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		86293FFA14DDB21E00D81176 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		86293FFF14DDBA7600D81176 /* AddStudentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddStudentViewController.h; sourceTree = "<group>"; };
+		8629400014DDBA7600D81176 /* AddStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudentViewController.m; sourceTree = "<group>"; };
+		8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = QuickDialog.xcodeproj; path = QuickDialog/QuickDialog.xcodeproj; sourceTree = "<group>"; };
+		8629401814DDD1B300D81176 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8629401A14DDD1BE00D81176 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8629401C14DDDC7400D81176 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		8629401D14DDDC7400D81176 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8629401B14DDD1BE00D81176 /* MapKit.framework in Frameworks */,
+				8629401914DDD1B300D81176 /* CoreLocation.framework in Frameworks */,
+				8629401714DDD01E00D81176 /* libQuickDialog.a in Frameworks */,
 				86293FDD14DDB1AD00D81176 /* UIKit.framework in Frameworks */,
 				86293FDF14DDB1AD00D81176 /* Foundation.framework in Frameworks */,
 				86293FE114DDB1AD00D81176 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +109,9 @@
 		86293FDB14DDB1AD00D81176 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8629401A14DDD1BE00D81176 /* MapKit.framework */,
+				8629401814DDD1B300D81176 /* CoreLocation.framework */,
+				8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */,
 				86293FDC14DDB1AD00D81176 /* UIKit.framework */,
 				86293FDE14DDB1AD00D81176 /* Foundation.framework */,
 				86293FE014DDB1AD00D81176 /* CoreGraphics.framework */,
@@ -78,9 +123,10 @@
 		86293FE414DDB1AD00D81176 /* DevineStudents */ = {
 			isa = PBXGroup;
 			children = (
+				8629401F14DDE2D500D81176 /* Model */,
+				86293FF814DDB1FE00D81176 /* Main */,
 				86293FED14DDB1AD00D81176 /* AppDelegate.h */,
 				86293FEE14DDB1AD00D81176 /* AppDelegate.m */,
-				86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */,
 				86293FE514DDB1AD00D81176 /* Supporting Files */,
 			);
 			path = DevineStudents;
@@ -97,6 +143,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		86293FF814DDB1FE00D81176 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				86293FFE14DDBA4A00D81176 /* Add Student */,
+				86293FF914DDB21E00D81176 /* MainViewController.h */,
+				86293FFA14DDB21E00D81176 /* MainViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		86293FFE14DDBA4A00D81176 /* Add Student */ = {
+			isa = PBXGroup;
+			children = (
+				86293FFF14DDBA7600D81176 /* AddStudentViewController.h */,
+				8629400014DDBA7600D81176 /* AddStudentViewController.m */,
+			);
+			name = "Add Student";
+			sourceTree = "<group>";
+		};
+		8629400314DDC6EF00D81176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8629400C14DDC6EF00D81176 /* QuickDialogExample.app */,
+				8629400E14DDC6EF00D81176 /* libQuickDialog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8629401F14DDE2D500D81176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8629401C14DDDC7400D81176 /* Student.h */,
+				8629401D14DDDC7400D81176 /* Student.m */,
+				86293FF014DDB1AD00D81176 /* DevineStudents.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +195,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				8629401614DDD01100D81176 /* PBXTargetDependency */,
 			);
 			name = DevineStudents;
 			productName = DevineStudents;
@@ -136,12 +221,35 @@
 			mainGroup = 86293FCD14DDB1AD00D81176;
 			productRefGroup = 86293FD914DDB1AD00D81176 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 8629400314DDC6EF00D81176 /* Products */;
+					ProjectRef = 8629400214DDC6EF00D81176 /* QuickDialog.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				86293FD714DDB1AD00D81176 /* DevineStudents */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		8629400C14DDC6EF00D81176 /* QuickDialogExample.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = QuickDialogExample.app;
+			remoteRef = 8629400B14DDC6EF00D81176 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8629400E14DDC6EF00D81176 /* libQuickDialog.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libQuickDialog.a;
+			remoteRef = 8629400D14DDC6EF00D81176 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		86293FD614DDB1AD00D81176 /* Resources */ = {
@@ -162,10 +270,21 @@
 				86293FEB14DDB1AD00D81176 /* main.m in Sources */,
 				86293FEF14DDB1AD00D81176 /* AppDelegate.m in Sources */,
 				86293FF214DDB1AD00D81176 /* DevineStudents.xcdatamodeld in Sources */,
+				86293FFC14DDB21E00D81176 /* MainViewController.m in Sources */,
+				8629400114DDBA7600D81176 /* AddStudentViewController.m in Sources */,
+				8629401E14DDDC7500D81176 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8629401614DDD01100D81176 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QuickDialog;
+			targetProxy = 8629401514DDD01100D81176 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		86293FE714DDB1AD00D81176 /* InfoPlist.strings */ = {
@@ -225,10 +344,14 @@
 		86293FF614DDB1AD00D81176 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DevineStudents/DevineStudents-Prefix.pch";
 				INFOPLIST_FILE = "DevineStudents/DevineStudents-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"${PROJECT_DIR}/QuickDialog\"";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -236,10 +359,14 @@
 		86293FF714DDB1AD00D81176 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DevineStudents/DevineStudents-Prefix.pch";
 				INFOPLIST_FILE = "DevineStudents/DevineStudents-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				"USER_HEADER_SEARCH_PATHS[arch=*]" = "\"${PROJECT_DIR}/QuickDialog\"/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
