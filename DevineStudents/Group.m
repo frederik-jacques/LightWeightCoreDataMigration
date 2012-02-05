@@ -1,20 +1,18 @@
 //
-//  Student.m
+//  Group.m
 //  DevineStudents
 //
 //  Created by Frederik Jacques on 04/02/12.
 //  Copyright (c) 2012 dev-dev. All rights reserved.
 //
 
-#import "Student.h"
 #import "Group.h"
+#import "Student.h"
 
 
-@implementation Student
+@implementation Group
 
-@dynamic email;
-@dynamic firstname;
-@dynamic lastname;
-@dynamic inGroup;
+@dynamic name;
+@dynamic students;
 
 @end

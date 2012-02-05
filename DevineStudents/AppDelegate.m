@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "Group.h"
+
+@interface AppDelegate()
+- (void)fillTheGroups;
+@end
 
 @implementation AppDelegate
 
@@ -21,6 +26,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    [self fillTheGroups];
+    
     
     MainViewController *mainVC = [[MainViewController alloc] initWithManagedObjectContext:self.managedObjectContext andFrame:self.window.frame];
     
@@ -32,6 +39,31 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)fillTheGroups {
+    NSError *error = nil;
+    
+    NSFetchRequest *fetch = [[NSFetchRequest alloc] initWithEntityName:@"Group"];
+    
+    NSUInteger amountOfGroups = [self.managedObjectContext countForFetchRequest:fetch error:&error];
+    
+    if( amountOfGroups == 0 ){
+        NSLog(@"[AppDelegate] No groups detected, gonna add 6");
+        for (int i = 1; i <= 6; i++) {
+            Group *group = [NSEntityDescription insertNewObjectForEntityForName:@"Group" inManagedObjectContext:self.managedObjectContext];
+            group.name = [NSString stringWithFormat:@"1DEV%i", i];
+            
+        }
+        
+        if( [self.managedObjectContext save:&error] ){
+            NSLog(@"[AppDelegate] Added the groups");
+        }else{
+            NSLog(@"[AppDelegate] Problem with adding the groups");
+        }
+    }else{
+        NSLog(@"[AppDelegate] Groups already imported");
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

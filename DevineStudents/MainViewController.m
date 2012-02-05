@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "AddStudentViewController.h"
 #import "Student.h"
+#import "Group.h"
 
 @implementation MainViewController
 
@@ -86,7 +87,7 @@
     
     Student *student = [self.fetchController objectAtIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@", student.firstname, student.lastname];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ %@ (%@)", student.firstname, student.lastname, student.inGroup.name];
     cell.detailTextLabel.text = student.email;
     return cell;
 }
